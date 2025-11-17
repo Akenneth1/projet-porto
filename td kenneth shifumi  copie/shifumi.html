@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu Shifumi</title>
+    <script src="shifumi.js"></script>
+</head>
+<body>
+
+<h1>JEU DU SHIFUMI BY KENNETH - (Pierre - Feuille - Ciseaux)</h1>
+
+<p>Fais ton choix :</p>
+
+<div id="choix-boutons">
+    <button onclick="jouer('pierre')">Pierre</button>
+    <button onclick="jouer('feuille')">Feuille</button>
+    <button onclick="jouer('ciseaux')">Ciseaux</button>
+</div>
+
+<h3>Résultat du tour :</h3>
+<p id="resultat"></p>
+
+<h3>Scores Actuels (Partie en 5 tours) :</h3>
+<p id="score">Joueur : 0 | Ordinateur : 0 | Égalités : 0</p>
+
+<button onclick="rejouer()">Rejouer</button>
+
+</body>
+</html>

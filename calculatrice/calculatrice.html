@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice</title>
+    <script>
+        function addition(a, b) {
+            return a + b;
+        }
+        function soustraction(a, b) {
+            return a - b;
+        }
+        function multiplication(a, b) {
+            return a * b;
+        }
+        function division(a, b) {
+            if (b === 0) {
+                return "Erreur : division par zéro";
+            }
+            return a / b;
+        }
+
+        let choix;
+
+        do {
+            choix = parseInt(prompt(
+
+            ));
+            if (choix >= 1 && choix <= 4) {
+                let a = parseFloat(prompt("Entrez le premier nombre :"));
+                let b = parseFloat(prompt("Entrez le deuxième nombre :"));
+                let resultat;
+                if (choix === 1) {
+                    resultat = addition(a, b);
+                } else if (choix === 2) {
+                    resultat = soustraction(a, b);
+                } else if (choix === 3) {
+                    resultat = multiplication(a, b);
+                } else if (choix === 4) {
+                    resultat = division(a, b);
+                }
+                console.log("Résultat :", resultat);
+            }
+        } while (choix !== 5);
+        console.log("Fin du programme.");
+    </script>
+</head>
+<body>
+</body>
+</html>
