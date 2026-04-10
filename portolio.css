@@ -446,3 +446,19 @@ footer {
     display: block;
     margin: 0 auto;
 }
+.about-photo {
+  width: 120px;        /* 👈 taille réduite */
+  height: 120px;
+  border-radius: 50%;  /* 👈 rend le cadre rond */
+  overflow: hidden;    /* 👈 coupe l’image pour faire le cercle */
+  margin: 0 auto;      /* 👈 centre */
+  border: 3px solid var(--accent);
+}
+
+/* TRÈS IMPORTANT */
+.div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 👈 évite déformation */
+  border-radius: 50%;  /* 👈 sécurité pour le rond */
+}
